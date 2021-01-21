@@ -4,13 +4,14 @@
 
 #include "Arduino.h"
 
+template <typename ServerType>
 class ClassWithImplementation {
 public:
     ClassWithImplementation(int t);
 };
 
-ClassWithImplementation::ClassWithImplementation(int test) {
-    
+template <typename ServerType>
+ClassWithImplementation<ServerType>::ClassWithImplementation(int test) {
 }
 
 #endif
